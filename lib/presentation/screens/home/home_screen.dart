@@ -2,10 +2,19 @@ import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
   static const String name = 'home_screen';
+
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Tu Lista de Compras'),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add_outlined)
+      ),
+    );
   }
 }
